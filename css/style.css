@@ -211,7 +211,7 @@ header {
   grid-auto-columns: calc((100% / 3) - 12px);
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
-  gap: 35px;
+  gap: 1%;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
@@ -247,20 +247,22 @@ header {
 
 .carousel .card {
   margin-top: 3vw;
+  padding: 0 20px 10px 20px;
   scroll-snap-align: start;
-  height: 16vw;
+  max-height: 350px;
+  width: 238px;
   list-style: none;
   background: #fff;
   cursor: pointer;
   padding-bottom: 1vw;
   flex-direction: column;
-  border-radius: 1.6vw;
+  border-radius: 25px;
 }
 
 .card .img img {
   z-index: 1;
   margin-top: -1vw;
-  height: 11.8vw;
+  height: 170px;
 
 }
 
@@ -269,7 +271,7 @@ header {
   color: #431F0D;
   font-family: 'Bookman Old Style';
   font-weight: 600;
-  font-size: 1.8vw;
+  font-size: 36px;
 }
 
 .carousel .card a {
@@ -328,9 +330,10 @@ header {
   margin: 10px;
   text-decoration: none;
   position: relative;
-  font-size: 0.8vw;
-  height: 1.5vw;
-  width: 8vw;
+  font-size: 10px;
+  padding: 7px 10px;
+  /* height: 31px;
+  width: 8vw; */
   color: #431F0D;
   font-weight: bold;
   text-transform: uppercase;
@@ -600,11 +603,11 @@ header {
 }
 
 .img-help-modal {
-  width: 7vw;
+  width: 100px;
 }
 
 .img-help-modal3 {
-  width: 4.5vw;
+  width: 65.5px;
 }
 
 .button-help {
@@ -891,7 +894,7 @@ h5 {
 }
 
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1440px) {
   
   .header-navbar,
   .header-content {
@@ -901,10 +904,13 @@ h5 {
   .contain,
   .wrapper {
     padding:  8px 0 0 0;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
   }
-  
+
+  .img-content img {
+    right: -10%;
+  }
   .carousel-container>div {
     width: 100%;
     margin: 0 auto;
@@ -921,7 +927,7 @@ h5 {
   }
   
   .card-news {
-    width: 60%;
+    width: 87%;
   }
   
   .contain {
@@ -944,7 +950,7 @@ h5 {
   }
 
   .wrapper .carousel {
-    grid-auto-columns: calc((100% / 3) - -9px);
+    grid-auto-columns: calc((100% / 4) - -9px);
   }
 
 
@@ -1082,10 +1088,6 @@ h5 {
     max-width: 100%;
   }
 
-  .wrapper .carousel {
-    grid-auto-columns: calc((100% / 4) - 22px);
-  }
-
   .donat-contact {
     position: absolute;
     top: 50%;
@@ -1122,7 +1124,7 @@ h5 {
   }
 
   .wrapper .carousel {
-    grid-auto-columns: calc((100% / 3) - 24px);
+    grid-auto-columns: calc((100% / 2) - 7px);
   }
 
   .wrapper i {
@@ -1177,6 +1179,10 @@ h5 {
   .about-div>img {
     width: 200px;
     height: 200px;
+  }
+
+  .wrapper .carousel{
+    grid-auto-columns: calc((100% / 2) + 100px);
   }
 
   .donat-contact {
