@@ -1858,7 +1858,7 @@ h5 {
 
   .vk {
     padding-left: 0px;
-    margin-left: 54px;
+    /* margin-left: 54px; */
   }
 
   .logo-footer {
@@ -1893,8 +1893,12 @@ h5 {
   .logo-site-footer {
     width: 46px;
     margin-top: 1vw;
-    margin-left: 40%;
+    /* margin-left: 40%; */
   }
+
+  .logo-and-socials a img {
+    width: 3.45vw;
+}
 
 
 }
