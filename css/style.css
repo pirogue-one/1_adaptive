@@ -868,18 +868,26 @@ h5 {
 
 }
 
-.media img {
+.logo-and-socials a img {
   width: 1.45vw;
 }
 
 .logo-site-footer {
   width: 4.5vw;
-  margin-top: 1vw;
-  margin-left: 48%;
+  /* margin-top: 1vw;
+  margin-left: 48%; */
 }
 
-.vk {
+/* .vk {
   margin-left: 108px;
+} */
+
+.logo-and-socials {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
 }
 
 
