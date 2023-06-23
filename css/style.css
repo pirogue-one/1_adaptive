@@ -1,0 +1,1648 @@
+@font-face {
+  font-family: 'Bookman Old Style';
+  src: url(font/bookmanoldstyle_bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+.header-main,
+.container-about,
+.gray-bc,
+.help-shelter,
+.contain,
+.footer {
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.contain {
+  padding: 8px 200px 0 200px;
+}
+
+.gray-bc {
+  background-color: #F7F6F5;
+  padding: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bookman Old Style';
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header {
+  background-color: #431F0D;
+  margin-bottom: 70px;
+
+}
+
+.hr li {
+  font-family: 'Bookman Old Style';
+  display: inline;
+  margin-left: 15px;
+  font-size: 18px;
+  text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.15);
+}
+
+.header-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 42px;
+
+}
+
+.header-navbar img {
+  width: 82px;
+}
+
+.text-header-content h1 {
+  font-family: 'Bookman Old Style';
+  font-size: 36px;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.15);
+  margin-bottom: 24px;
+
+}
+
+.text-header-content p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 28px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.15);
+
+}
+
+.btn-header {
+  background: #B47746;
+  width: 135px;
+  box-shadow: -1px 1px 8px 0.5px rgba(255, 255, 255, 0.356);
+  border: 2px solid #431F0D;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 6px 21px;
+
+}
+
+.btn-header a {
+  font-family: 'Bookman Old Style';
+  font-weight: 900;
+  color: #431F0D;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.img-content {
+  width: 14%;
+}
+
+.img-content img {
+  position: absolute;
+  top: 34px;
+  right: 5%;
+}
+
+.container-about {
+  text-align: center;
+}
+
+.container-about h1 {
+  color: #431F0D;
+  font-family: 'Bookman Old Style';
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.about-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 70px;
+}
+
+.about-div>img {
+  width: 311px;
+  height: 311px;
+}
+
+.about-div p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+  color: #431F0D;
+  text-align: start;
+  margin-left: 54px;
+}
+
+
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 845px;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper i img {
+  width: 25px;
+  padding-top: 57px;
+  padding-left: 7px;
+
+}
+
+.wrapper i {
+  margin-left: -29px;
+  margin-right: -7px;
+  top: 53%;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child {
+  left: -2vw;
+}
+
+.wrapper i:last-child {
+  right: -2vw;
+}
+
+.wrapper .carousel {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  gap: 35px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel :where(.card, .img) {
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .card {
+  margin-top: 3vw;
+  scroll-snap-align: start;
+  height: 16vw;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 1vw;
+  flex-direction: column;
+  border-radius: 1.6vw;
+}
+
+.card .img img {
+  z-index: 1;
+  margin-top: -1vw;
+  height: 11.8vw;
+
+}
+
+.carousel .card h2 {
+  padding-top: 1vw;
+  color: #431F0D;
+  font-family: 'Bookman Old Style';
+  font-weight: 600;
+  font-size: 1.8vw;
+}
+
+.carousel .card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bookman Old Style';
+  font-size: 0.8vw;
+  color: #431F0D;
+}
+
+.carousel .card button {
+  margin-top: 0.5vw;
+  color: #431F0D;
+  font-size: 1.31rem;
+  width: 7vw;
+  height: 2vw;
+  border: 0.2vw solid #431F0D;
+  border-radius: 5vw;
+}
+
+.card {
+  box-shadow: 2px 2px 6px 2px rgba(67, 31, 13, 0.25);
+
+
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  font-family: 'Bookman Old Style';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 40px;
+
+
+  color: #431F0D;
+}
+
+
+/* Контейнер для кнопки, чтобы не прыгал контент, когда она сменит позиционирование */
+.css-modal-details {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Кнопка для открытия */
+.css-modal-details summary {
+  font-family: 'Bookman Old Style';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-decoration: none;
+  position: relative;
+  font-size: 0.8vw;
+  height: 1.5vw;
+  width: 8vw;
+  color: #431F0D;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #ffffff;
+  cursor: pointer;
+  border: 0.15vw solid #431F0D;
+  border-radius: 5vw;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.css-modal-details summary:hover,
+.css-modal-details summary:active,
+.css-modal-details summary:focus {
+  color: #FFF;
+}
+
+.css-modal-details summary:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  left: 0;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #431F0D;
+  transition: transform 0.5s;
+  transform: translateX(-100%);
+  z-index: -1;
+}
+
+.css-modal-details summary:hover:before,
+.css-modal-details summary:active:before,
+.css-modal-details summary:focus:before {
+  transform: translateX(0);
+}
+
+/* Кнопка при открытом окне переходит на весь экран */
+.css-modal-details details[open] summary {
+  cursor: default;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+
+/* Контейнер, который затемняет страницу */
+.css-modal-details details .cmc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.css-modal-details details[open] .cmc {
+  pointer-events: none;
+  z-index: 4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: bg 0.5s ease;
+  background: rgba(0, 0, 0, 0.356);
+}
+
+/* Модальное окно */
+.css-modal-details details .cmt {
+
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  padding: 20px;
+  width: 309px;
+  height: 350px;
+  transition: 0.5s;
+  border-radius: 25px;
+  background: #FFF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+
+  overflow: auto;
+}
+
+.css-modal-details details[open] .cmt {
+  animation: scale 0.5s ease;
+  z-index: 4;
+  pointer-events: auto;
+}
+
+
+/* Анимации */
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes move {
+  0% {
+    right: -80px;
+  }
+
+  100% {
+    right: 20px;
+  }
+}
+
+
+.cmt h3 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Bookman Old Style';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 22px;
+
+  /* Основной цвет 2 */
+
+  color: #431F0D;
+}
+
+.cmt h4 {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Bookman Old Style';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  padding-bottom: 1vw;
+
+  /* Основной цвет 2 */
+
+  color: #431F0D;
+}
+
+.cmt-p p {
+  display: flex;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #431F0D;
+}
+
+
+.card-help-all {
+  margin-bottom: 70px;
+}
+
+
+
+.help-shelter p {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 40px;
+
+
+  /* Основной цвет 2 */
+
+  color: #431F0D;
+}
+
+.help-shelter h1 {
+  text-align: center;
+  font-style: normal;
+  font-family: 'Bookman Old Style';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 40px;
+  color: #431F0D;
+  margin-top: 40px;
+}
+
+#title-block-news {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 40px;
+  margin-top: 70px;
+}
+
+
+.overlay {
+
+  /* Ukryj tło  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 20;
+  transition: .3s all;
+}
+
+
+/* Style dla okien modalnych */
+
+.modaltwo {
+
+  /* Ukrywanie okien  */
+  opacity: 0;
+  visibility: hidden;
+  /*  Wyśrodkuj i ustaw z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  /* Powinien być wyższy niż podłoże*/
+
+  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+  border-radius: 25px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+
+
+/* Style dla aktywnych klas znaków wodnych i okien */
+
+.modaltwo.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Style dla przycisku zamykania */
+
+.modaltwo__cross {
+  width: 1vw;
+  height: 1vw;
+  position: absolute;
+  top: 1vw;
+  right: 1.3vw;
+  fill: #444;
+  cursor: pointer;
+}
+
+
+
+.js-open-modal {
+  display: flex;
+  border-radius: 15px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  width: 135px;
+  color: #fff;
+  margin-bottom: 26px;
+  padding: 6px 21px;
+
+}
+
+.img-help-modal {
+  width: 7vw;
+}
+
+.img-help-modal3 {
+  width: 4.5vw;
+}
+
+.button-help {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modaltwo__title {
+  display: flex;
+  margin-top: -2vw;
+  width: 706px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1vw;
+
+  /* Основной цвет 2 */
+
+  color: #431F0D;
+}
+
+.contain-donat-contact {
+  background-image: url(../img/реквизиты.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 845px;
+  height: 444px;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+
+
+}
+
+.donat-contact {
+  position: absolute;
+
+
+  font-family: 'Bookman Old Style';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+
+  /* or 111% */
+
+
+  /* Основной цвет 2 */
+
+  color: #431F0D;
+}
+
+.img-help-inmodal {
+  width: 170px;
+  height: 70px;
+  margin: 15px;
+}
+
+
+
+.modal-help-content {
+  display: flex;
+  padding: 50px;
+}
+
+.div-donat {
+  margin-top: 3.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-donat {
+  width: 845px;
+}
+
+.p-donat {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5vw;
+
+  color: #431F0D;
+  margin-top: 1vw;
+
+}
+
+.donat-contact {
+  left: 9px;
+  top: 85px;
+  text-align: start;
+}
+
+video {
+  margin-left: 9%;
+  margin-top: 3%;
+  height: auto;
+  max-height: 100%;
+}
+
+
+.card-news {
+  display: flex;
+  align-items: flex-end;
+  padding: 15px;
+}
+
+.card-news {
+  box-shadow: 2px 2px 6px 2px rgba(67, 31, 13, 0.25);
+  border-radius: 30px;
+  margin-bottom: 40px;
+
+}
+
+.js-open-modal#news-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bookman Old Style';
+  font-weight: 600;
+
+  color: #431F0D;
+  border: 0.15vw solid #431F0D;
+
+
+
+}
+
+.modaltwo__title#donat-p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+
+  color: #4D2B17;
+
+}
+
+.modaltwo#donat-modal-one {
+  padding: 13px;
+}
+
+.card-news-content h4 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  color: #4D2B17;
+  margin-bottom: 20px;
+}
+
+.card-news-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-card-news {
+  margin-right: 30px;
+}
+
+
+
+#news-btn-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bookman Old Style';
+  font-weight: 600;
+  color: #431F0D;
+  border: 0.15vw solid #431F0D;
+
+}
+
+#news-btn-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bookman Old Style';
+  font-weight: 600;
+  color: #431F0D;
+  border: 0.15vw solid #431F0D;
+}
+
+
+.footer {
+  width: 100%;
+  height: 25vw;
+  justify-content: center;
+  background-color: #431F0D;
+  margin-top: 3vw;
+}
+
+.content-qw {
+  margin-top: 2vw;
+
+  display: flex;
+  align-items: center;
+}
+
+
+
+.flex-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.linefooter {
+  border: 0.2vw solid #B47746;
+  width: 99.6%;
+  height: 0vw;
+  margin-top: 2vw;
+}
+
+h5 {
+  margin-left: 1vw;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1vw;
+
+  color: #FFFFFF;
+
+}
+
+.footer-h3 {
+  font-family: 'Bookman Old Style';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+.footer-img {
+  width: 10vw;
+  height: 12.5vw;
+}
+
+.logo-footer {
+  width: 1.4vw;
+}
+
+.logo-footer2 {
+  width: 2.5vw;
+}
+
+.logo-footer3 {
+  width: 2.1vw;
+}
+
+.media {
+
+  position: absolute;
+  margin-top: -2vw;
+  left: 45vw;
+
+}
+
+.media img {
+  width: 1.45vw;
+}
+
+.logo-site-footer {
+  width: 4.5vw;
+  margin-top: 1vw;
+  margin-left: 48%;
+}
+
+.vk {
+  margin-left: 108px;
+}
+
+@media screen and (min-width: 569px) and (max-width: 1439px) {
+
+  .contain {
+    padding: 8px 130px 0 130px;
+  }
+
+  p.paragraph-big {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .header-navbar {
+    justify-content: space-between;
+  }
+
+  .header-content {
+    justify-content: space-between;
+  }
+
+  .img-content img {
+    right: -7%;
+  }
+
+  .contain-donat-contact {
+    width: 90%;
+  }
+
+  .donat-contact {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .contain-donat-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 360px;
+    padding: 50px 20px;
+  }
+
+  video {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .donat-contact {
+    font-size: 26px;
+  }
+
+  .card-news-content h4 {
+    font-size: 20px;
+  }
+
+  video {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .contain {
+    padding: 8px 25px;
+  }
+
+  video {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .img-help-inmodal {
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    right: -10px;
+
+
+  }
+
+  .contain-donat-contact {
+    width: 238px;
+    height: 134px;
+    border-radius: 10px;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .block-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-donat {
+    width: 238px;
+  }
+
+  .hr {
+    display: none;
+  }
+
+  .header-navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-navbar img {
+    width: 82px;
+    height: 101px;
+  }
+
+  .text-header-content {
+    text-align: center;
+  }
+
+  .text-header-content h1 {
+    text-align: center;
+    display: flex;
+    font-family: 'Bookman Old Style';
+    font-size: 20px;
+    color: #FFFFFF;
+    justify-content: center;
+    text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.15);
+
+  }
+
+  .text-header-content p {
+    align-items: center;
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    justify-content: center;
+    text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.15);
+  }
+
+  .btn-header {
+    margin-top: 6vw;
+    background: #B47746;
+    height: 31px;
+    box-shadow: -3px 1px 10px 0.5px rgba(255, 255, 255, 0.356);
+    border: 0.2vw solid #431F0D;
+    border-radius: 25px;
+
+  }
+
+  .btn-header a {
+    font-family: 'Bookman Old Style';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #431F0D;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bookman Old Style';
+
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-content {
+    width: 250px;
+    height: 185px;
+
+  }
+
+  .img-content img {
+    width: 290px;
+    height: 259px;
+    left: auto;
+    top: 281px;
+  }
+
+  .gray-bc {
+    padding: 20px;
+  }
+
+
+  .container-about h1 {
+    color: #431F0D;
+
+    font-family: 'Bookman Old Style';
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-div {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .about-div img {
+
+    order: 2;
+    width: 223px;
+  }
+
+  .about-div p {
+    text-align: center;
+    order: -1;
+    margin-left: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #431F0D;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+  .wrapper {
+    max-width: 200px;
+    position: relative;
+  }
+
+  .wrapper i img {
+    width: 15px;
+    padding-top: 1px;
+    padding-left: 3px;
+
+  }
+
+  .wrapper i {
+    margin-left: -6vw;
+    margin-right: -2vw;
+    top: 50%;
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+
+  .wrapper i:active {
+    transform: translateY(-50%) scale(0.85);
+  }
+
+  .wrapper i:first-child {
+    left: -22px;
+  }
+
+  .wrapper i:last-child {
+    right: -22px;
+  }
+
+  .wrapper .carousel {
+    margin-top: 3vw;
+    height: 250px;
+    width: 210px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 2) + 100px);
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 5vw;
+    border-radius: 30px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+
+  .carousel :where(.card, .img) {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel .card {
+    scroll-snap-align: start;
+    width: 197px;
+    height: 220px;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 1vw;
+    flex-direction: column;
+    border-radius: 5.6vw;
+  }
+
+  .card .img img {
+    width: 150px;
+    height: 141px;
+
+    z-index: 1;
+    margin-top: -4vw;
+
+  }
+
+  .carousel .card h2 {
+
+    color: #431F0D;
+    font-family: 'Bookman Old Style';
+    font-weight: 600;
+    font-size: 22px;
+  }
+
+  .carousel .card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bookman Old Style';
+    font-size: 10px;
+    color: #431F0D;
+  }
+
+  .card {
+    box-shadow: 2px 2px 6px 2px rgba(67, 31, 13, 0.25);
+
+  }
+
+  .css-modal-details {
+    height: min-content;
+  }
+
+  .css-modal-details summary {
+    font-family: 'Bookman Old Style';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    font-size: 10px;
+    height: 22px;
+    width: 95px;
+    color: #431F0D;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #ffffff;
+    cursor: pointer;
+    border: 0.15vw solid #431F0D;
+    border-radius: 5vw;
+    overflow: hidden;
+    z-index: 1;
+
+  }
+
+  .title-wrapper {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .help-shelter {
+    margin-top: 4vw;
+  }
+
+  .help-shelter p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #431F0D;
+    margin-bottom: 20px;
+    margin-right: 50px;
+  }
+
+  .help-shelter h1 {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-family: 'Bookman Old Style';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #431F0D;
+    margin: 20px 0;
+  }
+
+
+
+  .overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+  }
+
+  #title-block-news {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-help-all {
+    margin-bottom: 20px;
+  }
+
+  .modaltwo {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    padding: 10px 8px;
+    border-radius: 25px;
+    background-color: #fff;
+    transition: 0.3s all;
+  }
+
+  .modaltwo#donat-modal-one {
+    width: auto;
+  }
+
+  /* Style dla aktywnych klas znaków wodnych i okien */
+
+  .modaltwo.active,
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  /* Style dla przycisku zamykania */
+
+  .modaltwo__cross {
+    width: 1vw;
+    height: 1vw;
+    position: absolute;
+    top: 1vw;
+    right: 1.3vw;
+    fill: #444;
+    cursor: pointer;
+  }
+
+
+
+  .js-open-modal {
+    display: flex;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 13px;
+
+  }
+
+  .img-help-modal {
+    width: 50.3px;
+  }
+
+  .img-help-modal3 {
+    width: 38.22px;
+    height: 51.18px;
+  }
+
+  .button-help {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+
+  .button-help .js-open-modal {
+    width: auto;
+    margin: 19px;
+  }
+
+  .modaltwo__title {
+    display: flex;
+    width: 706px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1vw;
+    color: #431F0D;
+  }
+
+
+
+  .modal-help-content {
+    display: flex;
+    padding: 10px;
+  }
+
+
+
+  .div-donat {
+    margin-top: 7vw;
+  }
+
+
+  .p-donat {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 1vw;
+    color: #431F0D;
+
+  }
+
+  .donat-contact {
+    font-family: 'Bookman Old Style';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 15px;
+    position: absolute;
+    color: #431F0D;
+
+    left: 7px;
+    top: 9px;
+  }
+
+  .card-news {
+
+    margin-top: 4vw;
+    align-items: center;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    display: grid;
+    margin-left: 2vw;
+  }
+
+  .js-open-modal#news-btn {
+
+    font-family: 'Bookman Old Style';
+    margin-top: 3vw;
+    font-weight: 600;
+    font-size: 10px;
+    width: 95px;
+    height: 22px;
+    color: #431F0D;
+    border: 2px solid #431F0D;
+    border-radius: 25px;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    margin-left: 25%;
+  }
+
+  .modaltwo__title#donat-p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    color: #4D2B17;
+    width: 174px;
+    text-align: start;
+    font-size: 9px;
+
+  }
+
+  .modaltwo#donat-modal-one {
+    padding: 20px;
+  }
+
+  .card-news-content h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    color: #4D2B17;
+    text-align: center;
+  }
+
+  .card-news-content {
+    align-items: flex-start;
+  }
+
+  .card-news-content a {
+    margin-bottom: 0;
+  }
+
+  .img-card-news {
+    margin-bottom: 15px;
+    width: 188px;
+    margin-right: 0;
+  }
+
+
+
+  #news-btn-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bookman Old Style';
+    margin-top: 2vw;
+    font-weight: 600;
+    font-size: 10px;
+    width: 95px;
+    height: 22px;
+    color: #431F0D;
+    border: 2px solid #431F0D;
+    border-radius: 25px;
+    margin-left: 25%;
+    margin-top: 4vw;
+  }
+
+  #news-btn-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bookman Old Style';
+    font-weight: 600;
+    font-size: 10px;
+    width: 95px;
+    height: 22px;
+    color: #431F0D;
+    border: 2px solid #431F0D;
+    border-radius: 25px;
+    margin-top: 2vw;
+    margin-left: 25%;
+  }
+
+
+  .footer {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: #431F0D;
+    margin-top: 7vw;
+  }
+
+  .content-qw {
+    margin-top: 2vw;
+    align-items: center;
+    margin-left: 15%;
+  }
+
+
+  .flex-footer {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 37px;
+  }
+
+  .linefooter {
+    border: 0.2vw solid #B47746;
+    width: 99.6%;
+    height: 0vw;
+    margin-top: 10vw;
+  }
+
+  h5 {
+    margin-left: 1vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    color: #FFFFFF;
+
+  }
+
+  .footer-h3 {
+    font-family: 'Bookman Old Style';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    justify-content: center;
+  }
+
+
+  .footer-img {
+    position: absolute;
+    margin-top: -17px;
+    margin-left: 56%;
+    width: 80px;
+    height: 95px;
+  }
+
+  .vk {
+    padding-left: 0px;
+    margin-left: 54px;
+  }
+
+  .logo-footer {
+    width: 12px;
+  }
+
+  .logo-footer2 {
+    width: 20px;
+  }
+
+  .logo-footer3 {
+    width: 20px;
+  }
+
+  .media {
+    position: absolute;
+    margin-top: -22px;
+    left: 32.5vw;
+
+  }
+
+  .qwestions-div {
+    margin-bottom: 10px;
+  }
+
+  .media img {
+    width: 20px;
+
+
+  }
+
+  .logo-site-footer {
+    width: 46px;
+    margin-top: 1vw;
+    margin-left: 40%;
+  }
+
+
+}
