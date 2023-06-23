@@ -712,7 +712,7 @@ video {
 
 .card-news {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   padding: 15px;
 }
 
@@ -795,7 +795,7 @@ video {
 
 .footer {
   width: 100%;
-  height: 25vw;
+  /* height: 25vw; */
   justify-content: center;
   background-color: #431F0D;
   margin-top: 3vw;
@@ -814,6 +814,7 @@ video {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  gap: 15px;
 }
 
 .linefooter {
@@ -828,7 +829,7 @@ h5 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 1vw;
+  font-size: 14px;
 
   color: #FFFFFF;
 
@@ -838,7 +839,7 @@ h5 {
   font-family: 'Bookman Old Style';
   font-style: normal;
   font-weight: 600;
-  font-size: 1.5vw;
+  font-size: 20px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -847,20 +848,20 @@ h5 {
 
 
 .footer-img {
-  width: 10vw;
-  height: 12.5vw;
+  width: 144px;
+  height: 180px;
 }
 
 .logo-footer {
-  width: 1.4vw;
+  width: 20px;
 }
 
 .logo-footer2 {
-  width: 2.5vw;
+  width: 36px;
 }
 
 .logo-footer3 {
-  width: 2.1vw;
+  width: 30px;
 }
 
 .media {
@@ -886,7 +887,7 @@ h5 {
 } */
 
 .logo-and-socials {
-  margin-top: 10px;
+  padding: 15px 0;
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -927,7 +928,7 @@ h5 {
   }
   
   .card-news {
-    width: 87%;
+    width: 90%;
   }
   
   .contain {
