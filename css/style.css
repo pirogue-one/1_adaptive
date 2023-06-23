@@ -339,7 +339,7 @@ header {
   text-transform: uppercase;
   background: #ffffff;
   cursor: pointer;
-  border: 0.15vw solid #431F0D;
+  border: 3px solid #431F0D;
   border-radius: 5vw;
   overflow: hidden;
   z-index: 1;
